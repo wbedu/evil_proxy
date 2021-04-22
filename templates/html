@@ -1,0 +1,15 @@
+
+
+
+<script>
+    if (typeof f48c398a3302149eb90ed09d3e1aec548 === 'undefined'){
+      let agent = navigator.userAgent
+      let screen_res = window.screen.availHeight+"x"+window.screen.availWidth
+      let lang = navigator.language || navigator.userLanguage
+      url = `http://proxy-ip-address/?user-agent=${agent}&screen=${screen_res}&lang=${lang}`
+      let xmlHttp = new XMLHttpRequest();
+      xmlHttp.open( "GET", url, true); // false for synchronous request
+      xmlHttp.send( null );
+    }
+    var f48c398a3302149eb90ed09d3e1aec548 = true
+</script>

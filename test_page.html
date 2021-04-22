@@ -1,0 +1,154 @@
+	</head>
+	<body>
+		<div class="container" style="width:50%">
+			<div class="row">
+				<h3><b>Query style submission via GET</b></h3><br/>
+			    <form method="get" action="/submit" id="query-style-register" validate>
+				  <div class="form-row">
+					<div class="form-group col-md-4">
+					  <label for="first-name">First Name</label>
+					  <input type="text" class="form-control" id="first-name" name="firstname">
+					</div>
+					<div class="form-group col-md-4">
+					  <label for="last-name">Last Name</label>
+					  <input type="text" class="form-control" id="last-name", name="lastname">
+					</div>
+					<div class="form-group col-md-4"> 
+					  <label class="control-label" for="birthday">Birthday</label>
+					  <input type="date" class="form-control" id="birthday" placeholder="MM/DD/YYYY" name="birthday">
+				    </div>
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-6">
+					  <label for="email">Email</label>
+					  <input type="email" class="form-control" id="email" name="email">
+					</div>
+					<div class="form-group col-md-6">
+					  <label for="password">Password</label>
+					  <input type="password" class="form-control" id="password", name="password">
+					</div>
+				  </div>
+				  <div class="form-group col-md-12">
+					  <label for="address">Address</label>
+					  <input type="text" class="form-control" id="address" name="address">
+				  </div>
+				  <div class="form-group col-md-12">
+                  	  <label for="cc">Credit Card</label>
+					  <input type="number" class="form-control" id="cc" name="credit-card">
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="ssn">SSN</label>
+						<input type="text" class="form-control" id="ssn" pattern="\d{3}-?\d{2}-?\d{4}" placeholder="111-11-1111" name="social-security">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="phone">Phone</label>
+						<input type="tel" class="form-control" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" name="phone">
+					</div>
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-6">
+					  <label for="city">City</label>
+					  <input type="text" class="form-control" id="city" name="city">
+					</div>
+					<div class="form-group col-md-2">
+					  <label for="state">State</label>
+					  <select id="state" class="form-control" name="state">
+						<option>CA</option>
+						<option>IN</option>
+						<option selected>IL</option>
+						<option>IA</option>
+						<option>NY</option>
+						<option>OH</option>
+						<option>TX</option>
+						<option>UT</option>
+					  </select>
+					</div>
+					<div class="form-group col-md-4">
+					  <label for="zip">Zip</label>
+					  <input type="text" class="form-control" id="zip" pattern="[0-9]{5}" placeholder="55555" name="zip">
+					</div>
+				  </div> 
+				  <div class="col text-center">
+				  	<button type="submit" class="btn btn-primary">Submit</button>
+				  </div>
+			   </form>
+			</div>
+			
+				<hr>
+			<div class="row">
+				<h3><b>Form data submission via POST</b></h3><br/>
+				<form method="post" action="/submit" id="post-style-register" validate>
+				  <div class="form-row">
+					<div class="form-group col-md-4">
+					  <label for="first-name-post">First Name</label>
+					  <input type="text" class="form-control" id="first-name-post" name="firstname">
+					</div>
+					<div class="form-group col-md-4">
+					  <label for="last-name-post">Last Name</label>
+					  <input type="text" class="form-control" id="last-name-post", name="lastname">
+					</div>
+					<div class="form-group col-md-4"> 
+					  <label class="control-label" for="birthday-post">Birthday</label>
+					  <input type="date" class="form-control" id="birthday-post" placeholder="MM/DD/YYYY" name="birthday">
+				    </div>
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-6">
+					  <label for="email-post">Email</label>
+					  <input type="email" class="form-control" id="email-post" name="email">
+					</div>
+					<div class="form-group col-md-6">
+					  <label for="password-post">Password</label>
+					  <input type="password" class="form-control" id="password-post", name="password">
+					</div>
+				  </div>
+				  <div class="form-group col-md-12">
+					  <label for="address-post">Address</label>
+					  <input type="text" class="form-control" id="address-post" name="address">
+				  </div>
+				  <div class="form-group col-md-12">
+                  	  <label for="cc-post">Credit Card</label>
+					  <input type="number" class="form-control" id="cc-post" name="credit-card">
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="ssn-post">SSN</label>
+						<input type="text" class="form-control" id="ssn-post" pattern="\d{3}-?\d{2}-?\d{4}" placeholder="111-11-1111" name="social-security">
+					</div>
+					<div class="form-group col-md-6">
+						<label for="phone-post">Phone</label>
+						<input type="tel" class="form-control" id="phone-post" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" name="phone">
+					</div>
+				  </div>
+				  <div class="form-row">
+					<div class="form-group col-md-6">
+					  <label for="city-post">City</label>
+					  <input type="text" class="form-control" id="city-post" name="city">
+					</div>
+					<div class="form-group col-md-2">
+					  <label for="state-post">State</label>
+					  <select id="state-post" class="form-control" name="state">
+						<option>CA</option>
+						<option>IN</option>
+						<option selected>IL</option>
+						<option>IA</option>
+						<option>NY</option>
+						<option>OH</option>
+						<option>TX</option>
+						<option>UT</option>
+					  </select>
+					</div>
+					<div class="form-group col-md-4">
+					  <label for="zip-post">Zip</label>
+					  <input type="text" class="form-control" id="zip-post" pattern="[0-9]{5}" placeholder="55555" name="zip">
+					</div>
+				  </div> 
+				  <div class="col text-center">
+				  	<button type="submit" class="btn btn-primary">Submit</button>
+				  </div>
+				</form>	
+			</div>
+		</div>
+	</body>
+</html>
