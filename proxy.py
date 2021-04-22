@@ -9,8 +9,6 @@ from tools import Debuger
 import time
 VERBOSITY = 0
 
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(conflict_handler="resolve")
     parser.add_argument("-m", "--mode",
@@ -33,9 +31,18 @@ if __name__ == "__main__":
 
     server = Server(hostname=args.listening_ip,
                     port=int(args.listening_port),
-                    verbosity=args.verbosity)
+                    verbosity=args.verbosity,
+                    mode=args.mode)
     server.start()
 
-    time.sleep(10)
-    server.stop()
-    server.print_harvest()
+    # time.sleep(1)
+    # server.stop()
+
+
+    with open('./info 1.txt', mode='wt', encoding='utf-8') as result_file:
+        data =  "\n".join(server.get_harvest())
+        result_file.write(data)
+
+    with open('./info 2.txt', mode='wt', encoding='utf-8') as result_file:
+        data =  "\n".join(server.get_inject_replies())
+        result_file.write(data)
