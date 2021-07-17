@@ -11,7 +11,7 @@ passive mode records sensitive data
 ```
 
 ## Arguments
-```bash
+```
 usage: proxy.py [--help] -m MODE -h LISTENING_IP -p LISTENING_PORT [-v]
 
 optional arguments:
@@ -28,5 +28,5 @@ optional arguments:
 
  1. python3
  2. install python requires
- 
+
     `pip3 install -r requirements.txt --user`
